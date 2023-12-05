@@ -1,0 +1,20 @@
+1985  npm init
+ 1986  npm i snarkjs
+ 1987  node index.js
+ 1988  npm install -g circom
+ 1989  circom multiplier.circom --r1cs --wasm
+ 1990  snarkjs groth16 setup multiplier.r1cs powersOfTau28_hez_final_17.ptau multiplier_0000.zkey
+ 1991  npm install -g snarkjs
+ 1992  snarkjs groth16 setup multiplier.r1cs powersOfTau28_hez_final_17.ptau multiplier_0000.zkey
+ 1993  snarkjs zkey contribute multiplier_0000.zkey multiplier_final.zkey --name="1st Contributor Name" -v
+ 1994  snarkjs zkey export verificationkey multiplier_final.zkey verification_key.json
+ 1995  node start.js
+ 1996  circom multiplier.circom --r1cs --wasm
+ 1997  node start.js
+ 1998  node index.js
+
+
+
+
+ https://www.npmjs.com/package/snarkjs
+ Download - powersOfTau28_hez_final_17.ptau
