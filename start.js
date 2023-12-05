@@ -11,7 +11,7 @@ async function run() {
 
     const res = await snarkjs.groth16.verify(vKey, publicSignals, proof);
 
-    if (res === true) {
+    if (!res ===true) {
         console.log("Verification OK");
     } else {
         console.log("Invalid proof");

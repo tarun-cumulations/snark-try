@@ -1,0 +1,24 @@
+"SNARK" stands for "Succinct Non-interactive ARgument of Knowledge." It's a type of cryptographic proof that allows one party (the prover) to prove to another party (the verifier) that they know a value x, without revealing any information about x, and without any interaction between the prover and verifier beyond the initial proof. SNARKs are particularly notable for their succinctness, meaning the proofs are very small in size and quick to verify, regardless of the complexity of the statement being proven.
+
+Here are some key points about SNARKs:
+1. Zero-Knowledge Proofs
+
+SNARKs are a form of zero-knowledge proofs, which means they can prove possession of certain information without revealing what that information is. This property is crucial in many privacy-preserving applications.
+2. Non-Interactive
+
+Unlike some other types of zero-knowledge proofs that require back-and-forth communication between the prover and verifier, SNARKs are non-interactive. Once the prover generates a proof, it can be verified independently without further communication.
+3. Applications
+
+SNARKs have a range of applications, particularly in blockchain and privacy-focused technologies. They are used in cryptocurrencies like Zcash for private transactions, in scaling blockchain solutions (like rollups), and in confidential smart contracts.
+4. Computational Intensity
+
+Generating SNARK proofs can be computationally intensive, though verifying them is fast. The setup phase for creating proofs, known as the "trusted setup," is critical and needs to be carried out correctly to ensure the security of the proofs.
+5. The Trusted Setup
+
+The trusted setup is a one-time process that generates public parameters for the SNARK system. It's crucial that this setup is performed securely. If the setup is compromised, it could potentially allow for the creation of false proofs.
+6. Complexity and Size
+
+One of the advantages of SNARKs is that the proof size and the time to verify the proof do not scale with the complexity of the computation being proved. This makes SNARKs very efficient and practical for verifying complex computations.
+7. Tooling and Libraries
+
+Tools like snarkjs provide a way to work with SNARKs in the JavaScript ecosystem, allowing for the generation and verification of proofs. There are also other libraries and tools in different programming languages for working with SNARKs.
